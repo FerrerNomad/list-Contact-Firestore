@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Robert Ferrer">
+    <meta name="keywords" content="Front-end, Robert Ferrer, robertferrer, landing, page, one, Landing Page, react, native, developer, web, websites, website, app, ui/ux, designer, marketing, freelancer, portfolio, template, wordpress,">
+    <meta name="description" content="Robert Ferrer, I create interactive and engaging websites with animated graphics based on HTML5, CSS3, JavaScript and WIX that can be displayed on. I'm web developer, marketing, UI/UX designer and freelancer">
+    <meta name="copyright" content="© 2022 Robert Ferrer" />
+    <meta name="robots" content="index, follow">
+    <meta name="rating" content="general" />
+    <!-- logo mini top -->
+    <link rel="icon" class="logo2" href="../files/logomini.svg">
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+  <title>Robert Ferrer | Dashboard</title>
+</head>
+<body>
+  <div class="container">
+        <div class="recent_project">
+          <div class="table-wrapper">
+            <table class="table-users">
+              <br><br>
+                <h1 class="title-finance">CONTACT LIST</h1>
+                <br>
+                <tr>
+                    <th class="custumer-text">Firts Name</th>
+                    <th class="custumer-text">Last Name</th>
+                    <th class="custumer-text">Phone</th>
+                    <th class="custumer-text">Email</th>
+                    <th class="custumer-text">Action</th>
+                </tr>
+            </table>
+            <button class="btn btn-add">Add User</button>
+        </div>
+        <!-- Add Modal -->
+        <div class="add-modal modal-wrapper">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 class="add-del-title">Add New User</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form" autocomplete="off">
+                        <label class="form-edit">First Name</label>
+                        <input type="text" name="firstName" placeholder="">
+                        <label class="form-edit">Last Name</label>
+                        <input type="text" name="lastName" placeholder="">
+                        <label class="form-edit">Phone</label>
+                        <input type="number" name="phone" placeholder="">
+                        <label class="form-edit">Email</label>
+                        <input type="email" name="email" placeholder="">
+                        <button class="btn btn-modal">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Modal -->
+        <div class="edit-modal modal-wrapper">
+            <div class="modal">
+                <div class="modal-header">
+                    <h3 class="btn-edit">Edit User</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form" autocomplete="off">
+                        <label class="form-edit">First Name</label>
+                        <input type="text" name="firstName" placeholder="">
+                        <label class="form-edit">Last Name</label>
+                        <input type="text" name="lastName" placeholder="">
+                        <label class="form-edit">Phone</label>
+                        <input type="number" name="phone" placeholder="">
+                        <label class="form-edit">Email</label>
+                        <input type="email" name="email" placeholder="">
+                        <button class="btn btn-modal">Submit</button>
+                    </form>
+        </div>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+          <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+          <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+          <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+          <script>
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                  apiKey: "AIzaSyAx66z_pBIV5eoLYTDbXR4q3a7LiOyiPEA",
+                  authDomain: "customerlist-e142d.firebaseapp.com",
+                  projectId: "customerlist-e142d",
+                  storageBucket: "customerlist-e142d.appspot.com",
+                  messagingSenderId: "951919305885",
+                  appId: "1:951919305885:web:cb4d5852ed916f979ee074"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              const db = firebase.firestore();
+          </script>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./contacts.js"></script>
+</body>
+</html>
